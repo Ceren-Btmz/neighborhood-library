@@ -57,7 +57,15 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
-    public boolean checkOut() {
-        
+    public void checkOut(String checkedOutTo) {
+        this.checkedOutTo = checkedOutTo;
+        isCheckedOut = true;
+        System.out.println("You have checked out this book!");
+    }
+
+    public void checkIn() {
+        checkedOutTo = "";
+        isCheckedOut = false;
+        System.out.println("This book is now checked in, tj hank you!");
     }
 }
