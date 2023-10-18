@@ -74,9 +74,20 @@ public class NeighborhoodLibrary {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String name = scanner.nextLine();
+        System.out.println("Enter Book ID: ");
+        int bookId = scanner.nextInt();
+
+        String bookName = "";
+
+        for (int i = 0; i < books.length; i++) {
+            if (books[i].getId() == bookId) {
+                books[i].checkOut(name);
+                bookName = books[i].getTitle();
+            }
+        }
+
         System.out.println("Checking out successful!");
-
-
+        System.out.println("Go back to the main menu.");
     }
 
     public static void listAllCheckedOutBooks() {
@@ -87,13 +98,31 @@ public class NeighborhoodLibrary {
                 System.out.println(books[i].getId() + " | " + books[i].getIsbn() + " | " + books[i].getTitle() + " | " + books[i].getCheckedOutTo());
             }
         }
-        System.out.println("Would you like to check out a book? Y or N: ");
+        System.out.println("Would you like to check in a book? Y or N: ");
         String value = scanner.nextLine();
 
         if (value.equalsIgnoreCase("Y")) {
-            CheckingOut();
+            CheckingIn();
         } else {
             System.out.println("Go back to the main menu.");
         }
+    }
+
+    public static void CheckingIn() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Book ID: ");
+        int id = scanner.nextInt();
+
+        String bookName = "";
+
+        for (int i = 0; i < books.length; i++) {
+            if (books[i].getId() == id) {
+                books[i].checkIn();
+                bookName = books[i].getTitle();
+            }
+        }
+
+        System.out.println("Check in successful!");
+        System.out.println("Go back to main menu.");
     }
 }
