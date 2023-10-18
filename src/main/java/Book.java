@@ -66,6 +66,6 @@ public class Book {
     public void checkIn() {
         checkedOutTo = "";
         isCheckedOut = false;
-        System.out.println("This book is now checked in, tj hank you!");
+        System.out.println("This book is now checked in, thank you!");
     }
 }
