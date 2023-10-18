@@ -92,10 +92,11 @@ public class NeighborhoodLibrary {
 
     public static void listAllCheckedOutBooks() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("All Available Books: ");
+        System.out.println("All Checked Out Books: ");
         for (int i = 0; i < books.length; i++) {
             if (books[i].isCheckedOut()) {
-                System.out.println(books[i].getId() + " | " + books[i].getIsbn() + " | " + books[i].getTitle() + " | " + books[i].getCheckedOutTo());
+                System.out.println(books[i].getId() + " | " + books[i].getIsbn() + " | "
+                        + books[i].getTitle() + " | " + books[i].getCheckedOutTo());
             }
         }
         System.out.println("Would you like to check in a book? Y or N: ");
@@ -122,7 +123,6 @@ public class NeighborhoodLibrary {
             }
         }
 
-        System.out.println("Check in successful!");
         System.out.println("Go back to main menu.");
     }
 }
