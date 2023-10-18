@@ -2,11 +2,11 @@
  
 ![img_2.png](imgs/img_2.png)
 
-if the user input 1, all available books will be displayed:
+if the user inputs 1, all available books will be displayed:
 
 ![img_3.png](imgs/img_3.png)
 
-When the use inputs "Y" then they will be asked to give their name and book id:
+When the user inputs "Y" then they will be asked to give their name and book id:
 
 ![img_5.png](imgs/img_5.png)
 
@@ -14,7 +14,7 @@ Once this information is entered, the user will have checked out the book and wi
 
 ![img_6.png](imgs/img_6.png)
 
-Now we will have the User check the same book back in to confirm the steps have been accomplished and display the use of more code:
+Now we will have the user check the same book back in to confirm the steps that have been accomplished and display the use of more code:
 
 The user will input 2 in to view all checked out books:
 
@@ -38,11 +38,11 @@ If we select show all available books, then the book should now display the book
 
 It is a success!
 
-The use can enter "N" to show they do not want to check out a book and be redirected to the main menu.
+The user can enter "N" to show they do not want to check out a book and be redirected to the main menu.
 
 ![img_11.png](imgs/img_11.png)
 
-When the use enters "3" then the program ends.
+When the user enters "3" then the program ends.
 
 One interesting part of the code for me is:
 
