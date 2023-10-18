@@ -1,3 +1,5 @@
+package com.pluralsight;
+
 import java.util.Scanner;
 
 public class NeighborhoodLibrary {
@@ -74,7 +76,7 @@ public class NeighborhoodLibrary {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String name = scanner.nextLine();
-        System.out.println("Enter Book ID: ");
+        System.out.println("Enter com.pluralsight.Book ID: ");
         int bookId = scanner.nextInt();
 
         String bookName = "";
@@ -111,7 +113,7 @@ public class NeighborhoodLibrary {
 
     public static void CheckingIn() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter Book ID: ");
+        System.out.println("Enter com.pluralsight.Book ID: ");
         int id = scanner.nextInt();
 
         String bookName = "";
